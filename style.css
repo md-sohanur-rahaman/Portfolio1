@@ -1,0 +1,85 @@
+:root {
+    --bg: #0f172a;
+    --accent: #38bdf8;
+    --text: #f8fafc;
+    --card-bg: #1e293b;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: rgba(15, 23, 42, 0.9);
+    position: fixed;
+    width: 80%;
+    z-index: 100;
+}
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 30px; }
+nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.highlight { color: var(--accent); }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px 10%;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    border: 1px solid #334155;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+}
+
+#contact { padding: 100px 10%; text-align: center; }
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background: var(--card-bg);
+    color: white;
+}
+
+button {
+    padding: 15px 30px;
+    background: var(--accent);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
