@@ -87,3 +87,6 @@ button {
     cursor: pointer;
     font-weight: bold;
 }
+.title {
+    text-align: center;
+}
