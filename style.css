@@ -3,6 +3,7 @@
     --accent: #38bdf8;
     --text: #f8fafc;
     --card-bg: #1e293b;
+    --bg-image: url("bg.jpg");
 }
 
 body {
@@ -11,6 +12,9 @@ body {
     background-color: var(--bg);
     color: var(--text);
     scroll-behavior: smooth;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
 }
 
 nav {
